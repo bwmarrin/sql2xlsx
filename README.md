@@ -39,3 +39,10 @@ Usage of ./sql2xlsx:
         Output filename
 ```
 
+
+
+## Other handy tools
+
+* https://github.com/tealeg/csv2xlsx
+* https://github.com/tealeg/xlsx2csv
+
