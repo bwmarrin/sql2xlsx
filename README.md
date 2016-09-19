@@ -23,7 +23,7 @@ go build
 
 ## Usage
 
-All options except for are required.
+All options are required.
 
 ```
 Usage of ./sql2xlsx:
