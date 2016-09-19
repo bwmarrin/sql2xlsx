@@ -7,7 +7,7 @@ A simple program to convert SQL rows into Microsoft Excel XLSX files.
 This example is built to work with MS SQL driver however it can easily be 
 modified to function with any other Go SQL driver.
 
-**For help with this package or general Go discussion, please join the [Discord 
+**For help with this program or general Go discussion, please join the [Discord 
 Gophers](https://discord.gg/0f1SbxBZjYq9jLBk) chat server.**
 
 ## Install & Build
