@@ -122,19 +122,19 @@ func generateXLSXFromRows(rows *sql.Rows, outf string) error {
 		// and set some different options depending on the column type.
 		for _, v := range container {
 			xcell := xrow.AddCell()
-			switch v.(type) {
+			switch v := v.(type) {
 			case string:
-				xcell.SetString(v.(string))
+				xcell.SetString(v)
 			case []byte:
-				xcell.SetString(v.(string))
+				xcell.SetString(string(v))
 			case int64:
-				xcell.SetInt64(v.(int64))
+				xcell.SetInt64(v)
 			case float64:
-				xcell.SetFloat(v.(float64))
+				xcell.SetFloat(v)
 			case bool:
-				xcell.SetBool(v.(bool))
+				xcell.SetBool(v)
 			case time.Time:
-				xcell.SetDateTime(v.(time.Time))
+				xcell.SetDateTime(v)
 			default:
 				xcell.SetValue(v)
 			}
